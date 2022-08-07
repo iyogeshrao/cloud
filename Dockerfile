@@ -7,6 +7,6 @@ ADD https://www.free-css.com/assets/files/free-css-templates/download/page281/tr
 WORKDIR /var/www/html
 RUN unzip traveler.zip
 RUN cp -rvf markups-traveler/* .
-RUN rm -rf __MACOSX markups-traveler traveler.zip
+/RUN rm -rf __MACOSX markups-traveler traveler.zip
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
 EXPOSE 80
